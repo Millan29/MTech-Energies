@@ -15,31 +15,42 @@
         }
 
         .hero {
-            background-color: #e0f7e7;
-            padding: 50px 20px;
+            background-color: #2a7b47;
+            color: white;
+            padding: 60px 20px;
             text-align: center;
             margin-bottom: 30px;
         }
 
         .hero h1 {
-            color: #2a7b47;
+            font-size: 3rem;
+            color: #fff;
         }
 
         .feature {
             margin-bottom: 30px;
-            text-align: center;
         }
 
-        .footer {
-            background-color: #2a7b47;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 30px;
-        }
-
-        .img-fluid {
+        .feature img {
             border-radius: 10px;
+            transition: transform 0.3s ease;
+            height: 250px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .feature img:hover {
+            transform: scale(1.05);
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
         }
 
         h3 {
@@ -50,14 +61,27 @@
             color: #555;
         }
 
-        .container {
-            padding: 20px;
+        .footer {
+            background-color: #2a7b47;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
         }
 
-        /* Custom styling */
-        .feature img {
-            max-height: 250px;
-            object-fit: cover;
+        .container {
+            padding: 30px 20px;
+        }
+
+        .feature-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .feature-text {
+            padding: 20px;
         }
     </style>
 </head>
@@ -72,25 +96,37 @@
     <!-- Main Content Section -->
     <main class="container">
         <div class="row">
-            <!-- Solar Energy Feature -->
+            <!-- Solar Power Feature -->
             <div class="col-md-4 feature">
-                <img src="solar-panel.jpg" alt="Solar Panel" class="img-fluid mb-3">
-                <h3>Solar Power</h3>
-                <p>Harnessing the power of the sun for clean and renewable energy. Our solar solutions are designed to provide efficient and reliable power for homes and businesses.</p>
+                <div class="card feature-card">
+                    <img src="solar-panel.jpg" alt="Solar Panel" class="img-fluid">
+                    <div class="feature-text">
+                        <h3>Solar Power</h3>
+                        <p>Harnessing the power of the sun for clean and renewable energy. Our solar solutions are designed to provide efficient and reliable power for homes and businesses.</p>
+                    </div>
+                </div>
             </div>
 
             <!-- Wind Energy Feature -->
             <div class="col-md-4 feature">
-                <img src="wind-turbine.jpg" alt="Wind Turbine" class="img-fluid mb-3">
-                <h3>Wind Energy</h3>
-                <p>Utilizing wind turbines for efficient energy generation. Our wind energy solutions are designed to harness nature's power, providing sustainable energy to communities and industries.</p>
+                <div class="card feature-card">
+                    <img src="wind-turbine.jpg" alt="Wind Turbine" class="img-fluid">
+                    <div class="feature-text">
+                        <h3>Wind Energy</h3>
+                        <p>Utilizing wind turbines for efficient energy generation. Our wind energy solutions are designed to harness nature's power, providing sustainable energy to communities and industries.</p>
+                    </div>
+                </div>
             </div>
 
             <!-- Green Ecosystem Feature -->
             <div class="col-md-4 feature">
-                <img src="green-ecosystem.jpg" alt="Green Ecosystem" class="img-fluid mb-3">
-                <h3>Eco-Friendly Solutions</h3>
-                <p>Driving innovations that nurture a greener planet. At MTech Energies, we focus on sustainable energy solutions that benefit both the environment and future generations.</p>
+                <div class="card feature-card">
+                    <img src="green-ecosystem.jpg" alt="Green Ecosystem" class="img-fluid">
+                    <div class="feature-text">
+                        <h3>Eco-Friendly Solutions</h3>
+                        <p>Driving innovations that nurture a greener planet. At MTech Energies, we focus on sustainable energy solutions that benefit both the environment and future generations.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -105,3 +141,4 @@
 </body>
 
 </html>
+
