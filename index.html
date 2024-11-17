@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,19 +13,23 @@
             background-color: #f4f4f9;
             color: #333;
         }
+
         .hero {
             background-color: #e0f7e7;
             padding: 50px 20px;
             text-align: center;
             margin-bottom: 30px;
         }
+
         .hero h1 {
             color: #2a7b47;
         }
+
         .feature {
             margin-bottom: 30px;
             text-align: center;
         }
+
         .footer {
             background-color: #2a7b47;
             color: white;
@@ -32,34 +37,65 @@
             padding: 10px;
             margin-top: 30px;
         }
+
+        .img-fluid {
+            border-radius: 10px;
+        }
+
+        h3 {
+            color: #2a7b47;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        /* Custom styling */
+        .feature img {
+            max-height: 250px;
+            object-fit: cover;
+        }
     </style>
 </head>
+
 <body>
+    <!-- Hero Section -->
     <header class="hero">
         <h1>Welcome to MTech Energies</h1>
         <p>Innovative solutions for a sustainable future.</p>
     </header>
 
+    <!-- Main Content Section -->
     <main class="container">
         <div class="row">
+            <!-- Solar Energy Feature -->
             <div class="col-md-4 feature">
                 <img src="solar-panel.jpg" alt="Solar Panel" class="img-fluid mb-3">
                 <h3>Solar Power</h3>
-                <p>Harnessing the power of the sun for clean and renewable energy.</p>
+                <p>Harnessing the power of the sun for clean and renewable energy. Our solar solutions are designed to provide efficient and reliable power for homes and businesses.</p>
             </div>
+
+            <!-- Wind Energy Feature -->
             <div class="col-md-4 feature">
                 <img src="wind-turbine.jpg" alt="Wind Turbine" class="img-fluid mb-3">
                 <h3>Wind Energy</h3>
-                <p>Utilizing wind turbines for efficient energy generation.</p>
+                <p>Utilizing wind turbines for efficient energy generation. Our wind energy solutions are designed to harness nature's power, providing sustainable energy to communities and industries.</p>
             </div>
+
+            <!-- Green Ecosystem Feature -->
             <div class="col-md-4 feature">
                 <img src="green-ecosystem.jpg" alt="Green Ecosystem" class="img-fluid mb-3">
                 <h3>Eco-Friendly Solutions</h3>
-                <p>Driving innovations that nurture a greener planet.</p>
+                <p>Driving innovations that nurture a greener planet. At MTech Energies, we focus on sustainable energy solutions that benefit both the environment and future generations.</p>
             </div>
         </div>
     </main>
 
+    <!-- Footer Section -->
     <footer class="footer">
         <p>&copy; 2024 MTech Energies. All rights reserved.</p>
     </footer>
@@ -67,5 +103,7 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
+
 
